@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РегионМонитор — проверенные источники</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/russiaLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>РегионМонитор</h1>
+      <p>Только подтверждённые источники</p>
+    </div>
+    <button id="refreshBtn">Обновить</button>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Регионы</h2>
+      <div id="regionList"></div>
+      <div class="meta-note">Показываются только источники, которые были подтверждены вручную.</div>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="mapdiv"></div>
+    </section>
+
+    <section class="feed-wrap">
+      <div class="feed-head">
+        <h2 id="feedTitle">Все новости</h2>
+      </div>
+      <div id="newsList" class="news-list"></div>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
